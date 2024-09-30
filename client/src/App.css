@@ -1,0 +1,184 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+  
+  .background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/premium-photo/idea-comment-think-reactions-emoji-3d-render-social-media-balloon-symbol-with-comment-icons-pattern-background_41204-24759.jpg?size=626&ext=jpg&ga=GA1.1.998965272.1722746097&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+  }
+  .chat-container {
+    position: relative;
+    max-width: 70%;
+    width: 30%;
+    height: 50vh;
+    margin: 20px auto;
+    background: rgba(224, 224, 224, 0.641);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  
+@media (max-width: 600px) {
+    .chat-container {
+        position: relative;
+        width: 90%;
+        height: 50vh;
+        margin: 20px auto;
+        background: rgba(224, 224, 224, 0.641);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .chat-container.joined {
+        max-width: 100%;
+        height: 90vh;
+       
+      }
+}
+  
+  .chat-container.joined {
+    width: 100%;
+    height: 90vh;
+   
+  }
+  
+  /* Styling for the chat header */
+  .chat-header {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    background-color: rgb(215, 230, 244);
+    border-radius: 100px;
+  }
+  
+  /* Style for the input fields and buttons */
+  .input-field {
+    width: calc(100% - 22px);
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .join-button, .send-button {
+    width: 50%;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px 0;
+    margin-left: 25%;
+  }
+  
+  .join-button:hover, .send-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .chat-section {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .chat-box {
+    height: 65vh;
+    overflow-y: auto;
+    background-color: #cad9dc;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .message-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .message {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    word-break: break-word;
+    color: #ffff;
+    font-size: 17px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .message-form {
+    display: flex;
+  }
+  
+  .send-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+  }
+  
+  .send-button:hover {
+    background-color: #218838;
+  }
+
+  .username-span{
+    color: #28a745;
+    font-weight: 900;
+    padding: 10px;
+    
+  }
+  .message-span{
+      color: #040404dd;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    }
+
+    .clear_chat{
+      width: 29%;
+      padding: 10px;
+      right: 0;
+      background-color: rgb(137, 2, 2);
+      color: #ffff;
+      font-weight: 900;
+      font-size: 20px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin: 2px;
+    }
+
+    .clear_chat:hover{
+      color: rgb(231, 216, 216);
+    }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 6px;
+  }
+
+  webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 80%);
+  }
+  
+  /* Custom scrollbar styles for Firefox */
+ 

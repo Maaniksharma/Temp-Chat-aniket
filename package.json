@@ -1,0 +1,18 @@
+{
+    "name": "Chat-App",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "node server/app.js",
+      "build": "npm install --prefix client && npm run build --prefix client",
+      "postinstall": "npm run build"
+    },
+    "engines": {
+      "node": "18.x"
+    },
+    "dependencies": {
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "mongoose": "^5.13.8"
+    },
+    "devDependencies": {}
+  }
